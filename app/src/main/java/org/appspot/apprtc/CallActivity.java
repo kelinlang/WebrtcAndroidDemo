@@ -24,7 +24,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
+
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
@@ -32,6 +32,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+
 import java.io.IOException;
 import java.lang.RuntimeException;
 import java.util.ArrayList;
@@ -150,7 +153,8 @@ public class CallActivity extends Activity implements AppRTCClient.SignalingEven
 
   private final ProxyVideoSink remoteProxyRenderer = new ProxyVideoSink();
   private final ProxyVideoSink localProxyVideoSink = new ProxyVideoSink();
-  @Nullable private PeerConnectionClient peerConnectionClient;
+  @Nullable
+  private PeerConnectionClient peerConnectionClient;
   @Nullable
   private AppRTCClient appRtcClient;
   @Nullable
