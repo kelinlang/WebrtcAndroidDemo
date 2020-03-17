@@ -1,1 +1,2 @@
-include ':app', /*':WebrtcLib',*/ ':webrtcdemo'
+include ':app', ':WebrtcApi', ':Webrtc'
+rootProject.name='WebrtcAndroidDemo'
